@@ -122,7 +122,7 @@ std::vector<std::size_t> find_path_Dijkstra(std::vector<Node>& graph, int start_
         node.prevIndex = 1000000;
     }                
     
-    std::map<int,int> min_weigth_map;                
+    std::multimap<int,int> min_weigth_map;                
     nodes[start_index].weight = 0;             
     min_weigth_map.insert({ 0, start_index });       
 
